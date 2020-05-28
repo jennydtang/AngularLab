@@ -6,9 +6,10 @@ import { IntroComponent } from './intro/intro.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', component: IntroComponent },
+  { path: 'intro', component: IntroComponent },
   { path: 'one', component: CompOneComponent },
   { path: 'two', component: CompTwoComponent },
+  { path: '', redirectTo: '/intro', pathMatch: 'full' },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

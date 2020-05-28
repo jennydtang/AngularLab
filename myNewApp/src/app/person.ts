@@ -1,4 +1,5 @@
 export class Person {
+  [x: string]: any;
   private FirstName: string;
   private LastName: string;
   private Age: number;
